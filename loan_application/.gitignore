@@ -1,0 +1,32 @@
+# Secrets and environment
+.env
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+test_loan.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log

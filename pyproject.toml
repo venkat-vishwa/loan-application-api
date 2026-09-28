@@ -1,0 +1,28 @@
+[project]
+name = "interview"
+version = "0.1.0"
+description = "Loan Application Management REST API"
+readme = "README.md"
+authors = [
+    { name = "venkat-vishwa", email = "vishwaa1301@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "pydantic[email]>=2.13.5",
+    "pymysql>=1.2.3",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.1.1",
+    "uvicorn>=0.54.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+# loan_application/ is added to sys.path so "from app.xxx import" works in tests
+pythonpath = ["loan_application"]
+testpaths = ["loan_application/tests"]
